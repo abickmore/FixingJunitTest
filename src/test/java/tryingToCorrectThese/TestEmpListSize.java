@@ -1,19 +1,28 @@
-package incorrect;
+package tryingToCorrectThese;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import main.java.Employee;
 import main.java.EmployeeManager;
+import main.java.EmployeeComparator;
+
 
 class TestEmpListSize {
 
-	EmployeeManager EM = null;
-	
+	//EmployeeManager EM = null;
+	private static EmployeeManager EM;
+
+	@BeforeAll
+	public static void setup() {
+		EM = new EmployeeManager();
+	}
+
 	@Test
 	@DisplayName("Correct initial length of Employee List")
 	void testEmpListLength() {

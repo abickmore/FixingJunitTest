@@ -1,4 +1,4 @@
-package incorrect;
+package tryingToCorrectThese;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -7,9 +7,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import main.java.Employee;
 import main.java.EmployeeManager;
+import main.java.EmployeeComparator;
 
-class TestEmpShuffle {
+class TestEmpShuffle<EmployeeManager> {
 
 	EmployeeManager EM = null;
 
